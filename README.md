@@ -13,10 +13,10 @@
     docker exec -it {CONTAINER ID} /bin/sh
 
 4. Install dependencies, build assets and run migrations:
-    npm install
-    npm run build
-    composer install
-    php artisan migrate
+    - npm install
+    - npm run build
+    - composer install
+    - php artisan migrate
     
 5. Run tests:
     php artisan test

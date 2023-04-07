@@ -26,9 +26,9 @@
     - php artisan test
 
 API URLs:
-/api/v1/crypto/currencies
-/api/v1/crypto/currencies/litecoin
-/api/v1/crypto/currencies/bitcoin
+- /api/v1/crypto/currencies
+- /api/v1/crypto/currencies/litecoin
+- /api/v1/crypto/currencies/bitcoin
 
-/api/v1/user/auth
-/api/v1/user/register
+- /api/v1/user/auth
+- /api/v1/user/register

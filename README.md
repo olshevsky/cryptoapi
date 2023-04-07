@@ -18,5 +18,16 @@
     - composer install
     - php artisan migrate
     
-5. Run tests:
+5. To run tests:
+    - open phpMyAdmin
+    - create DB laravel_test
+    - Login into cryptoapi_app container docker exec -it {CONTAINER ID} /bin/sh
     - php artisan test
+
+API URLs:
+/api/v1/crypto/currencies
+/api/v1/crypto/currencies/litecoin
+/api/v1/crypto/currencies/bitcoin
+
+/api/v1/user/auth
+/api/v1/user/register

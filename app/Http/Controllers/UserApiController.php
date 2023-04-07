@@ -33,8 +33,13 @@ class UserApiController extends Controller
             ]);
         }
 
+        $tokenLifetime = intval(config('sanctum.apiKeyExpiration'));
+        $expiresAt = new \DateTime();
+        $expiresAt->modify("+$tokenLifetime minutes");
+        $token = $user->createToken('api_token', ['rates:get'], $expiresAt);
+
         return response()->json([
-            'token' => $user->createToken('api_token')->plainTextToken
+            'token' => $token->plainTextToken
         ]);
     }
 

@@ -17,9 +17,10 @@
     - npm run build
     - composer install
     - php artisan migrate
+    - chmod -R 777 ./storage
     
-5. To run tests:
-    - open phpMyAdmin
+6. To run tests:
+    - open phpMyAdmin http://localhost:8080/ root/password
     - create DB laravel_test
     - Login into cryptoapi_app container docker exec -it {CONTAINER ID} /bin/sh
     - php artisan test
